@@ -1,0 +1,84 @@
+.header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+    background: $main-color;
+    &__wrap {
+        padding: 12px 18px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 89px;
+        color: $white-color;
+    }
+    &__logo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 11px;
+        &-second {
+            position: relative;
+            padding-left: 17px;
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 1px;
+                height: 22px;
+                background: $white-color;
+            }
+        }
+    }
+    &__phone {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 230px;
+        padding-left: 31px;
+        color: $white-color;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: -0.03em;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 21px;
+            height: 24px;
+            background-image: url("../../icons/phone.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    &__contacts {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        padding-left: 27px;
+        color: $white-color;
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 17px;
+            height: 28px;
+            background-image: url("../../icons/address.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    &__address {
+        font-size: 13px;
+        letter-spacing: -0.02em;
+    }
+    &__hamburger {
+        display: none;
+    }
+}

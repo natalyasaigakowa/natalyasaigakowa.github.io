@@ -1,0 +1,14 @@
+.form {
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 14px;
+    }
+    &__title {
+        margin-bottom: 20px;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 30.6px;
+    }
+}

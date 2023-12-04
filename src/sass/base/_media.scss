@@ -1,0 +1,176 @@
+@media (max-width: 1200px) {
+    .header {
+        &__wrap {
+            gap: 25px;
+        }
+        &__contacts {
+            max-width: 345px;
+        }
+    }
+    .menu {
+        &__wrap {
+            padding: 0px 6px;
+            gap: 2px;
+            padding: 0px 6px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    .nav {
+        &__list {
+            gap: 24px;
+        }
+    }
+    .promo {
+        &__wrap {
+            padding-bottom: 390px;
+        }
+    }
+    .fix {
+        &__wrap {
+            justify-content: center;
+            gap: 42px;
+            padding: 39px 20px 26px 74px;
+        }
+    }
+    .catalog {
+        &__list {
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        &__wrap {
+            gap: 167px;
+            row-gap: 10px;
+        }
+        &__contacts {
+            max-width: none;
+        }
+    } 
+    .promo {
+        &__text {
+            font-size: 32px;
+        }
+    }
+    .button {
+        font-size: 14px;
+    } 
+}
+
+@media (max-width: 768px) {
+    .header {
+        position: relative;
+        &__wrap {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        &__hamburger {
+            display: block;
+            position: absolute;
+            right: 30px;
+            top: 20px;
+        }
+    }
+    .menu {
+        &__stamp {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: -310%;
+            display: block;
+            padding: 45px 70px;
+            background: $main-color;
+            transition: 0.6s all;
+            z-index: 3;
+            &-active {
+                top: 0;
+            }
+            .nav__list {
+                flex-direction: column;
+                gap: 6px;
+                align-items: center;
+            }
+            .nav__link {
+                padding: 14px 0;
+            }
+        }
+    }
+    .fix {
+        &__wrap {
+            flex-direction: column;
+            gap: 24px;
+            padding: 34px 14px 26px 14px;
+        }
+        &__timer {
+            width: 100%;
+        }
+    }    
+
+}
+
+@media (max-width: 568px) {
+    .header {
+        &__wrap {
+            gap: 25px;
+        }
+        &__logo {
+            flex-direction: column;
+            &-second {
+                display: none;
+            }
+        }
+    }
+    .menu {
+        &__info {
+            .nav__list {
+                gap: 8px;
+                row-gap: 4px;
+                justify-content: center;
+            }
+        }
+    }
+    .promo {
+        &__text {
+            font-size: 28px;
+            line-height: 38px;
+        }
+    }
+    .fix {
+        &__timer {
+            display: none;
+        }
+        &__chat {
+            left: 15px;
+        }
+    }
+    .catalog {
+        &__signup {
+            display: none;
+        }
+        &__text {
+            gap: 9px;
+        }
+        &__title {
+            font-size: 18px;
+        }
+        &__descr {
+            font-size: 15px;
+        }      
+    }
+    .advantages {
+        &__list {
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 200px;
+        }
+    }
+    .button {
+        font-size: 10px;
+    }
+}
+
+
